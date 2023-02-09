@@ -2,7 +2,7 @@
 My Labs from Computational Mathematics. 4th semester. 
 
 
-#Lab1 
+# Lab1 
 Ответы на вопросы лабораторной работы. 
 
 1. Что является решением системы линейных алгебраических уравнений?
