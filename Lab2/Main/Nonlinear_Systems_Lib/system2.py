@@ -1,8 +1,11 @@
-from computational_math_lib import *
+import numpy as np
+from matplotlib import pyplot as plt
+from Linear_Systems.gauss import gauss
+from System_Utils.parsers import *
 
 
 def system2():
-    epsilon = float(input("Enter epsilon\n").replace(",", "."))
+    epsilon = parse_float_array(input("Enter epsilon\n").replace(",", "."))[0]
     print("2x = y/(1 + y*y)")
     # 2*x + 2*x*y*y - y = 0
     print("2y = x/(1+x*x)")

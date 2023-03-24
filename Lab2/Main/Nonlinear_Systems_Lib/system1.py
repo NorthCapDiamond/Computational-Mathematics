@@ -1,8 +1,11 @@
-from computational_math_lib import *
+import numpy as np
+from matplotlib import pyplot as plt
+from Linear_Systems.gauss import gauss
+from System_Utils.parsers import *
 
 
 def system1():
-    epsilon = float(input("Enter epsilon\n").replace(",", "."))
+    epsilon = parse_float_array(input("Enter epsilon\n").replace(",", "."))[0]
     print("x*x + y*y = 4")
     print("y = 3*x*x")
     a = np.arange(-2, 2, 0.01)

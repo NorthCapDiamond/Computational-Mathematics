@@ -1,5 +1,7 @@
+from Nonlinear_Equations.methods import *
 from Nonlinear_Systems_Lib.system1 import *
 from Nonlinear_Systems_Lib.system2 import *
+from System_Utils.io_util import *
 
 while True:
     user_input = input("Enter Command or help\n")
