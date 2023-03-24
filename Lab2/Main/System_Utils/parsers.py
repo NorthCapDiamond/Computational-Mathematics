@@ -13,4 +13,4 @@ def parse_float_array(user_input):
             if user_input[i][j] not in alphabet:
                 sys.exit("invalid input")
     edges = [float(x) for x in user_input]
-    return sorted(edges)
+    return edges

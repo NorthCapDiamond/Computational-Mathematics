@@ -5,7 +5,7 @@ from System_Utils.parsers import *
 
 
 def system1():
-    epsilon = parse_float_array(input("Enter epsilon\n").replace(",", "."))[0]
+    epsilon = parse_float_array(input("Enter epsilon\n").replace(",", ".").split())[0]
     print("x*x + y*y = 4")
     print("y = 3*x*x")
     a = np.arange(-2, 2, 0.01)
@@ -14,17 +14,6 @@ def system1():
     plt.plot(a, 3 * a * a, r * np.sin(t), r * np.cos(t), lw=3)
     plt.axis('equal')
     plt.show()
-
-    """
-       Jacobian:
-       2x   2y  
-       -6x  1
-       
-       => 
-       
-       2xdx + 2ydy = 4 - x*x - y*y 
-       -6xdx + dy = 3*x*x - y
-     """
 
     user_input = input("Enter x0, y0\n").replace(",", ".").split()
     x_first, y_first = parse_float_array(user_input)

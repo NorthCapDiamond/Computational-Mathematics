@@ -14,19 +14,19 @@ while True:
     if user_input == "secant":
         typer = input("f or in\n")
         if typer == "f":
-            print(secant_method(read_equation_systems_file(input("type the link\n")), enter_interval_stdin()))
+            print(secant_method(read_equation_file(input("type the link\n")), enter_interval_stdin()))
         if typer == "in":
             print(secant_method(read_equation_stdin(), enter_interval_stdin()))
     if user_input == "simple":
         typer = input("f or in\n")
         if typer == "f":
-            print(simple_iteration(read_equation_systems_file(input("type the link\n")), enter_interval_stdin()))
+            print(simple_iteration(read_equation_file(input("type the link\n")), enter_interval_stdin()))
         if typer == "in":
             print(simple_iteration(read_equation_stdin(), enter_interval_stdin()))
     if user_input == "half":
         typer = input("f or in\n")
         if typer == "f":
-            print(half_division(read_equation_systems_file(input("type the link\n")), enter_interval_stdin()))
+            print(half_division(read_equation_file(input("type the link\n")), enter_interval_stdin()))
         if typer == "in":
             print(half_division(read_equation_stdin(), enter_interval_stdin()))
     if user_input == "exit":

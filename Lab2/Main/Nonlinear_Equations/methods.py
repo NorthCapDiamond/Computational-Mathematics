@@ -1,10 +1,11 @@
-from Nonlinear_Equations.function_util import *
+from System_Utils import graph_util
 from System_Utils.parsers import *
 
 
 def half_division(equation, interval):
+    graph_util.draw_graph(equation, -5, 5)
     check_interval(equation, interval)
-    epsilon = parse_float_array(input("Enter epsilon\n").replace(",", "."))[0]
+    epsilon = parse_float_array(input("Enter epsilon\n").replace(",", ".").split())[0]
     a = interval[0]
     b = interval[1]
     x = (a + b) / 2
@@ -26,8 +27,9 @@ def half_division(equation, interval):
 
 
 def simple_iteration(equation, interval):
+    graph_util.draw_graph(equation, -5, 5)
     check_interval(equation, interval)
-    epsilon = parse_float_array(input("Enter epsilon\n").replace(",", "."))[0]
+    epsilon = parse_float_array(input("Enter epsilon\n").replace(",", ".").split())[0]
     equation = list(equation)
     a = interval[0]
     b = interval[1]
@@ -54,8 +56,9 @@ def simple_iteration(equation, interval):
 
 
 def secant_method(equation, interval):
+    graph_util.draw_graph(equation, -5, 5)
     check_interval(equation, interval)
-    epsilon = parse_float_array(input("Enter epsilon\n").replace(",", "."))[0]
+    epsilon = parse_float_array(input("Enter epsilon\n").replace(",", ".").split())[0]
     equation = list(equation)
     x_prev = interval[0]
     x_next = interval[1]

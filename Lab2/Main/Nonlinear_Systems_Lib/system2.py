@@ -5,7 +5,7 @@ from System_Utils.parsers import *
 
 
 def system2():
-    epsilon = parse_float_array(input("Enter epsilon\n").replace(",", "."))[0]
+    epsilon = parse_float_array(input("Enter epsilon\n").replace(",", ".").split())[0]
     print("2x = y/(1 + y*y)")
     # 2*x + 2*x*y*y - y = 0
     print("2y = x/(1+x*x)")
